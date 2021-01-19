@@ -1,1 +1,1 @@
-# cg1_website
+# CG1 Website

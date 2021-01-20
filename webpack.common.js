@@ -63,10 +63,18 @@ const common = function (env) {
               loader: 'file-loader',
             }
           ]
-        }
+        },
+        {
+          enforce: "pre",
+          test: /\.js$/,
+          loader: "source-map-loader"
+        },
       ],
     },
     plugins,
+    resolve: {
+      extensions: [".js", ".ts", ".tsx", ".scss"]
+    },
   };
 };
 

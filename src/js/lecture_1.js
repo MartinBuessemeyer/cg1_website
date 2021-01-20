@@ -50,6 +50,9 @@ const transpileOptions = {
   },
 };
 
+// Hook for doing stuff on content change (code edit).
+editor.onDidChangeContentModel(event => {});
+
 const executionCommand = editor.addCommand(
   monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter,
   function () {

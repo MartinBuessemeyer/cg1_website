@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "slevesque.shader",
+        "IBM.output-colorizer",
+        "searKing.preview-vscode",
+        "ducfilan.pug-formatter"
+    ]
+}

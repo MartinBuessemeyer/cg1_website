@@ -4,10 +4,10 @@ Install dependencies: `npm install`
 
 Build Website: `npm run build`
 
-Run Website: `npm start`
+Run Website: `npm run dev`
 
 ### Linting
 
-Test for warnings (return non zero exit code if linting printed warnings): - `npx eslint ./src --ext .js,.jsx,.ts,.tsx --max-warnings 0`
+Test for warnings (return non zero exit code if linting printed warnings): - `npm run lint-check`
 
-Autofix linter problems: `npx eslint ./src/ --ext .js,.jsx,.ts,.tsx --fix`
+Autofix linter problems: `npm run lint`

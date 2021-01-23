@@ -13,6 +13,9 @@
     "rules": {
         "indent": ["error", 4],
         "semi": ["error", "always"],
-        "no-extra-semi": ["error"]
+        "no-extra-semi": ["error"],
+        "func-call-spacing": ["error"],
+        "block-spacing": ["error", "always"],
+        "space-before-function-paren": ["error", "always"]
     }
 }

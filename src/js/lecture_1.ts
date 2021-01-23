@@ -3,13 +3,13 @@ import '../css/main.scss';
 import * as monaco from 'monaco-editor';
 import { EditableCode, initEditable } from './editable_code';
 
+// The render loop.
 function execute() {
     console.log(temp.editable());
 }
 
+// The class that contains one editable code segment.
 class EditorTry implements EditableCode {
-    readonly containerID: string = 'container';
-    readonly executeFunction: Function = execute;
     editor: monaco.editor.IStandaloneCodeEditor;
     preEditable() {}
     postEditable(str: string) {
@@ -28,6 +28,5 @@ class EditorTry implements EditableCode {
     }
 }
 
-const temp = new EditorTry();
-temp.init();
+const temp = new EditorTry().init();
 execute();

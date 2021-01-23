@@ -2,8 +2,6 @@ import * as monaco from 'monaco-editor';
 import * as ts from 'typescript';
 
 export interface EditableCode {
-    readonly containerID: string;
-    readonly executeFunction: Function;
     editor: monaco.editor.IStandaloneCodeEditor;
     // The init function must be called after constructing the element.
     // It needs to have the @initEditable decorator.
